@@ -5,9 +5,7 @@ import { Button } from 'react-bootstrap'; // Import the Button component from Re
 function Square({ value, onSquareClick, className }) {
   return (
     // Render a button with the passed value and className, and an onClick event handler
-    <button className={`square ${className}`} onClick={onSquareClick}>
-      {value} // Display the value (either 'X', 'O', or null) inside the button
-    </button>
+    <button className={`square ${className}`} onClick={onSquareClick}>{value}</button>
   );
 }
 
